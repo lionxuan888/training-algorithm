@@ -15,20 +15,31 @@ import java.util.concurrent.locks.ReentrantLock;
 public class TestQuickSort {
 
     @Test
-    public void quickSort() {
-        int a[] = new int[]{7, 8, 30, 6, 5, 9, 10, 1, 3};
-
-        int size = a.length;
-        System.out.println("数组大小:" + size);
-
-        int privoit = size/2;
-        System.out.println("数组基准位置数据:" + a[privoit]);
-
+    public void quickSort( int[] array, int left, int right) {
+        int mid = partition(array, left, right);
+        quickSort(array, left, mid-1);
+        quickSort(array, mid + 1, right);
 
     }
 
-    public void sort(int[] aa) {
+    public int partition(int[] aa, int left, int right) {
+        int pivot = aa[left];
+        int mid = left;
+        while (left < right) {
+            // 基准数和右哨兵比较
+            while (pivot < aa[right]) {
+                right--;
+            }
+            aa[left] = aa[right];
+            while (pivot > aa[left]) {
+                left++;
+            }
+            aa[right] = aa[left];
+        }
 
+
+
+       return 1;
     }
 
     @Test
