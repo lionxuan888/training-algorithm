@@ -24,7 +24,7 @@ public class TestSwapNodes {
      * 关键
      * 1, 如何抽取外层节点用作变量, 用pre还是next
      * 2. 两两交叉的指针关联代码的处理, 可以不用先一部到位,
-     *    在本次循环可以先暂时执行下一个pair的left, 等一次循环在重新指向下一个pair的right
+     *    也就是在最头节点上虚拟一个节点, 在本次循环中处理和上一个pair的钩子
      *      preNode.next = rightNode;
      * @param head
      * @return
@@ -46,7 +46,6 @@ public class TestSwapNodes {
 
             preNode = leftNode;
             curr = leftNode.next;
-
         }
         return newHead;
     }
