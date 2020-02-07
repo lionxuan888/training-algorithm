@@ -33,6 +33,12 @@ public class TestReverseLinkList {
         }
     }
 
+    /**
+     * 关键解题点,
+     * curr和pre抽离到外边, curr进行迭代, pre进行指针关联
+     * @param head
+     * @return
+     */
     public static ListNode reverseList(ListNode head) {
         if (head == null || head.next == null ) {
             return head;
