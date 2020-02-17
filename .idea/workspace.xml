@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d81a7a9d-6aa8-4158-9d22-0f929d8d9bef" name="Default" comment="debug.algorithm 添加解题技巧注释">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/test/java/twenty/Feb/MyQueue.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/test/java/twenty/Feb/TestQueue.java" afterPath="$PROJECT_DIR$/src/main/test/java/twenty/Feb/KthLargest.java" />
+    <list default="true" id="d81a7a9d-6aa8-4158-9d22-0f929d8d9bef" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/test/java/resources/基础-操作系统.xmind" afterPath="$PROJECT_DIR$/src/main/test/java/resources/基础-操作系统.xmind" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/test/java/resources/基础-数据结构与算法.xmind" afterPath="$PROJECT_DIR$/src/main/test/java/resources/基础-数据结构与算法.xmind" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -62,8 +62,8 @@
       <file leaf-file-name="PriorityQueue.java" pinned="false" current-in-tab="true">
         <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/util/PriorityQueue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="90" column="32" lean-forward="false" selection-start-line="90" selection-start-column="32" selection-end-line="90" selection-end-column="32" />
+            <state relative-caret-position="301">
+              <caret line="108" column="0" lean-forward="true" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -316,7 +316,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="twenty" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="training-algorithm" type="b2602c69:ProjectViewProjectNode" />
@@ -326,17 +326,6 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="twenty" type="462c0819:PsiDirectoryNode" />
-              <item name="Feb" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="training-algorithm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="training-algorithm" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="twenty" type="462c0819:PsiDirectoryNode" />
-              <item name="Jan" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -360,11 +349,11 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/util/Stack.java" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/test/java/resources" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/test" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/test/java/resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -588,7 +577,7 @@
       <workItem from="1579082491672" duration="286000" />
       <workItem from="1579082789904" duration="4142000" />
       <workItem from="1579163625513" duration="72476000" />
-      <workItem from="1581302631884" duration="26049000" />
+      <workItem from="1581302631884" duration="26681000" />
     </task>
     <task id="LOCAL-00001" summary="同步器框架学习">
       <created>1579430154960</created>
@@ -639,7 +628,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581738647319</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="debug.algorithm 添加解题技巧注释">
+      <created>1581932332813</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1581932332813</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -663,7 +659,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102953000" />
+    <option name="totallyTimeSpent" value="103585000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1385" height="877" extended-state="0" />
@@ -741,9 +737,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="同步器框架学习" />
-    <MESSAGE value="debug.algorithm 添加解题技巧注释" />
     <MESSAGE value="debug.algorithm 提交括号和环形链表" />
-    <option name="LAST_COMMIT_MESSAGE" value="debug.algorithm 提交括号和环形链表" />
+    <MESSAGE value="debug.algorithm 添加解题技巧注释" />
+    <option name="LAST_COMMIT_MESSAGE" value="debug.algorithm 添加解题技巧注释" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1217,8 +1213,8 @@
     </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/util/PriorityQueue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="90" column="32" lean-forward="false" selection-start-line="90" selection-start-column="32" selection-end-line="90" selection-end-column="32" />
+        <state relative-caret-position="301">
+          <caret line="108" column="0" lean-forward="true" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
           <folding />
         </state>
       </provider>
