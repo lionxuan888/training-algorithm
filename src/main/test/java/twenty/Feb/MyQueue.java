@@ -28,8 +28,17 @@ import java.util.Stack;
 public class MyQueue {
     /**
      * 解题思路,使用两个栈
-     *  Java队列Api的三组方法
+     *  Java Queue Api的三组方法
      *  queue 队列的方法  add remove / offer poll / element peek
+     *  Stack 的方法     push pop  peek
+     *  关于队列接口:
+     *  1. Queue 接口
+     *  2. Deque(deck)继承了Queue接口, Deque可以
+     *   2.1 This interface extends the Queue interface. When a deque is used as a queue, FIFO (First-In-First-Out) behavior results
+     *   2.2 Deques can also be used as LIFO (Last-In-First-Out) stacks. This interface should be used in preference to the legacy Stack class
+     *  实现类
+     *  ArrayDeque 数组实现的双端队列,his class is likely to be faster than Stack when used as a stack, and faster than LinkedList when used as a queue.
+     *  LinkedList 链表实现的双端队列
      */
     private Stack<Integer> stack1 = null;
     private Stack<Integer> stack2 = null;

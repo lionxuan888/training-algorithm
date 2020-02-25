@@ -1,5 +1,6 @@
 package twenty.Feb;
 
+import java.util.Comparator;
 import java.util.PriorityQueue;
 
 /**
@@ -23,8 +24,42 @@ import java.util.PriorityQueue;
  * Created by logan on 2020/2/15.
  */
 public class KthLargest {
+    private PriorityQueue<Integer> queue;
+    private int limit;
+
+    public KthLargest(int k, int[] nums) {
+        limit = k;
+        queue = new PriorityQueue<>(k);
+        for (int num : nums) {
+            add(num);
+        }
+    }
+
+    public int add(int val) {
+        if (queue.size() < limit) {
+            queue.add(val);
+        } else if (val > queue.peek()) {
+            queue.poll();
+            queue.add(val);
+        }
+
+        return queue.peek();
+    }
+
 
     public static void main(String[] args) {
+
+        int k = 3;
+        //int[] arr = new int[]{4, 5, 8, 2};
+        int[] arr = new int[]{};
+        KthLargest kthLargest = new KthLargest(k, arr);
+        System.out.println(kthLargest.add(3));// returns 4
+        System.out.println(kthLargest.add(5)); // returns 5
+        System.out.println(kthLargest.add(10));// returns 5
+        System.out.println(kthLargest.add(9));// returns 8
+        System.out.println(kthLargest.add(4));// returns 8
+
+        System.out.println("===================");
         PriorityQueue<Integer> priorityQueue = new PriorityQueue<Integer>();
         priorityQueue.add(8);
         priorityQueue.add(5);
@@ -46,6 +81,6 @@ public class KthLargest {
         // 9 (1001  )  >>> 1 =   4
         // 10 (1010  )  >>> 1 =   5
         // 11 (1011  )  >>> 1 =   5
-        System.out.println(12 >>>1);
+        System.out.println(12 >>> 1);
     }
 }
