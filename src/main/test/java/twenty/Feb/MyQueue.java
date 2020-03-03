@@ -1,5 +1,6 @@
 package twenty.Feb;
 
+import java.util.LinkedHashMap;
 import java.util.Stack;
 
 /**
@@ -77,6 +78,22 @@ public class MyQueue {
 
     public boolean empty() {
         return stack1.isEmpty();
+    }
+
+    public static void main(String[] args) {
+        LinkedHashMap<Integer,Integer> map = new LinkedHashMap<>(8, 0.75f, true);
+
+        map.put(1, 1);
+        map.put(2, 2);
+        map.put(3, 3);
+
+        map.get(3);
+        map.get(2);
+        map.get(1);
+
+        System.out.println(map);
+
+
     }
 
 }
