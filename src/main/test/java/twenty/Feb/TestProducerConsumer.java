@@ -48,7 +48,13 @@ public class TestProducerConsumer {
     //              up(empty);
     //          }
     // 这种写法,大体结构没有问题,但是仔细分析还是有问题的, 直接看wiki里的解释
-    //    The solution above works fine when there is only one producer and consumer. With multiple producers sharing the same memory space for the item buffer, or multiple consumers sharing the same memory space, this solution contains a serious race condition that could result in two or more processes reading or writing into the same slot at the same time. To understand how this is possible, imagine how the procedure putItemIntoBuffer() can be implemented. It could contain two actions, one determining the next available slot and the other writing into it. If the procedure can be executed concurrently by multiple producers, then the following scenario is possible:
+    //    The solution above works fine when there is only one producer and consumer.
+    //    With multiple producers sharing the same memory space for the item buffer, or multiple consumers sharing the same memory space, this solution contains
+    //    a serious race condition that could result in two or more processes reading or writing into the same slot at the same time.
+    //    To understand how this is possible,
+    //    imagine how the procedure putItemIntoBuffer() can be implemented.
+    //    It could contain two actions, one determining the next available slot and the other writing into it.
+    //    If the procedure can be executed concurrently by multiple producers, then the following scenario is possible:
     //
     //    1.Two producers decrement emptyCount
     //    2.One of the producers determines the next empty slot in the buffer

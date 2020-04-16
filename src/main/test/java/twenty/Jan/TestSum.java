@@ -1,4 +1,4 @@
-package java.twenty.Jan;
+package twenty.Jan;
 
 import com.google.common.collect.*;
 import com.google.common.util.concurrent.Uninterruptibles;
